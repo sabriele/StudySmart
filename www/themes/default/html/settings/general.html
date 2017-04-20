@@ -1,0 +1,35 @@
+<div class="page-inner"><div class="page-title">{$lng->user_desc_general}</div></div>
+{$message}
+<div class="message-divider"></div>
+<div class="page-inner">
+	<form action="{$url}/index.php?a=settings" method="post">
+	
+	<div class="page-input-container">
+		<div class="page-input-title">{$lng->ttl_first_name}</div>
+		<div class="page-input-content">
+			<input type="text" name="first_name" value="{$currentFirstName}" />
+			<div class="page-input-sub">{$lng->sub_first_name}</div>
+		</div>
+	</div>
+	
+	<div class="page-input-container">
+		<div class="page-input-title">{$lng->ttl_last_name}</div>
+		<div class="page-input-content">
+			<input type="text" name="last_name" value="{$currentLastName}" />
+			<div class="page-input-sub">{$lng->sub_last_name}</div>
+		</div>
+	</div>
+
+	<div class="page-input-container">
+		<div class="page-input-title">{$lng->ttl_email}</div>
+		<div class="page-input-content">
+			<input type="text" name="email" value="{$currentEmail}" />
+		</div>
+	</div>
+	
+</div>
+<div class="message-divider"></div>
+<div class="page-inner">
+	<div class="page-input-title"></div><input type="submit" value="{$lng->save_changes}"/>
+</div>
+</form>
